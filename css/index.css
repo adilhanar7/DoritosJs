@@ -1,0 +1,593 @@
+.container {
+  max-width: 83.33333vw;
+  margin: 0 auto;
+}
+
+span {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@keyframes heroBackgroundLinear {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes chipsBackdropLinear {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(6%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes floatSuyaPepper {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes floatKetchup {
+  0% {
+    transform: translateY(0%) translateX(0%);
+  }
+  50% {
+    transform: translateY(5%) translateX(5%);
+  }
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+
+@keyframes floatChips {
+  0% {
+    transform: translateY(0%) translateX(0%);
+  }
+  50% {
+    transform: translateY(5%) translateX(5%);
+  }
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+
+.App .header {
+  position: absolute;
+  z-index: 1;
+  padding: 0.52083vw 0;
+  width: 100%;
+}
+
+.App .header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App .header__logo {
+  margin-left: -1.5625vw;
+}
+
+.App .header__logo a img {
+  max-height: 6.66667vw;
+}
+
+.App .header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.App .header__menu .menu__items {
+  position: relative;
+  margin-left: 1.04167vw;
+}
+
+.App .header__menu .menu__items:hover::before {
+  width: 100%;
+}
+
+.App .header__menu .menu__items::before {
+  content: '';
+  position: absolute;
+  bottom: -0.20833vw;
+  left: 0;
+  width: 0%;
+  height: 0.20833vw;
+  background-color: #ffc107;
+  border-radius: 0.52083vw;
+  transition: 0.5s;
+}
+
+.App .header__menu .menu__items .menu__links {
+  font: 0.9375vw "Lodrina Solid", cursive;
+  font-weight: 900;
+  letter-spacing: 0.05208vw;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.App .header__cart .cart__btn {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 0.52083vw;
+  padding: 0.3125vw 0.52083vw;
+}
+
+.App .header__cart .cart__btn:hover {
+  background: #ffc107;
+}
+
+.App .header__cart .cart__btn:hover span {
+  background: #ffffff;
+  color: #111111;
+}
+
+.App .header__cart .cart__btn span {
+  position: absolute;
+  top: -1.04167vw;
+  left: 3.125vw;
+  background: #111111;
+  padding: 0.26042vw 0.67708vw;
+  border-radius: 50%;
+  color: #ffffff;
+  font: 1.04167vw "Londrina Solid", cursive;
+  font-weight: 500;
+  letter-spacing: 0.05208vw;
+  transition: all 250ms ease-in-out;
+}
+
+.App .header__cart .cart__btn img {
+  max-height: 2.60417vw;
+}
+
+.App .hero {
+  position: relative;
+  background: linear-gradient(45deg, #fd0606, #6a040f);
+  min-height: 100vh;
+  background-size: 200% 200%;
+  animation: heroBackgroundLinear 2s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.App .hero__rings {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.App .hero__row {
+  display: flex;
+}
+
+.App .hero__content {
+  padding-top: 7.8125vw;
+  position: relative;
+  width: 50%;
+}
+
+.App .hero__title {
+  font: 4.16667vw "Londrina Solid", cursive;
+  font-weight: 900;
+  letter-spacing: 0.15625vw;
+  line-height: 1em;
+  color: #ffc107;
+  overflow: hidden;
+  position: relative;
+}
+
+.App .hero__subtitle {
+  font: 1.66667vw "Londrina Solid", cursive;
+  font-weight: 900;
+  letter-spacing: 0.05208vw;
+  overflow: hidden;
+  color: #ffffff;
+  position: relative;
+}
+
+.App .hero__description {
+  width: 80%;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.83333vw;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+  max-height: 10.41667vw;
+  overflow: hidden;
+}
+
+.App .hero__description strong {
+  display: block;
+  margin-top: 0.52083vw;
+  font-size: 1.14583vw;
+  letter-spacing: 0.05208vw;
+}
+
+.App .hero__price {
+  font: 2.5vw "Londrina Solid", cursive;
+  font-weight: 900;
+  margin: 1.82292vw 0;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.App .hero__btn {
+  overflow: hidden;
+  position: relative;
+}
+
+.App .hero__btn:hover span {
+  background-color: #111111;
+  color: #ffc107;
+}
+
+.App .hero__btn span {
+  padding: 0.83333vw 2.5vw;
+  border-radius: 0.78125vw;
+  background-color: #ffc107;
+  transition: 0.5s;
+  font: 1.04167vw "Londrina Solid", cursive;
+  font-weight: 500;
+  letter-spacing: 0.05208vw;
+  color: #111111;
+  transition: 0.5s;
+}
+
+.App .hero__chipses {
+  position: relative;
+}
+
+.App .hero__chipses figure .chipses__doritos {
+  position: absolute;
+  z-index: 2;
+  animation: float 2s ease-in-out infinite;
+}
+
+.App .hero__chipses figure .chipses__backdrop {
+  position: absolute;
+  top: 10.41667vw;
+  right: 3.125vw;
+  width: 33.33333vw;
+  height: 40.36458vw;
+  background: linear-gradient(45deg, #ffc107, #ffffa0);
+  background-size: 200% 200%;
+  border-radius: 1.5625vw;
+  transform: skew(-5deg, -5deg);
+  animation: chipsBackdropLinear 2s ease-in-out infinite;
+}
+
+.App .hero__chipses figure .chipses__details {
+  position: relative;
+}
+
+.App .hero__chipses figure .chipses__details img {
+  position: absolute;
+}
+
+.App .hero__chipses figure .chipses__details .chipses__chips {
+  right: -2.60417vw;
+  top: -4.16667vw;
+  height: 17.70833vw;
+  transform: rotate(10deg);
+  z-index: 3;
+  animation: floatChips 2s ease-in-out infinite;
+}
+
+.App .hero__chipses figure .chipses__details .chipses__ketchup {
+  left: -2.08333vw;
+  top: 28.64583vw;
+  height: 8.33333vw;
+  z-index: 1;
+  animation: floatKetchup 2s ease-in-out infinite;
+}
+
+.App .hero__chipses figure .chipses__details .chipses__suyaPepper {
+  right: -3.125vw;
+  top: 26.04167vw;
+  height: 16.66667vw;
+  z-index: 0;
+  animation: floatSuyaPepper 2s ease-in-out infinite;
+}
+
+.App .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App .overlay__first {
+  position: absolute;
+  z-index: 9;
+  background-color: #ffc107;
+  left: 0;
+  width: 33.33%;
+  height: 100%;
+}
+
+.App .overlay__second {
+  position: absolute;
+  z-index: 9;
+  background-color: #ffc107;
+  left: 33.33%;
+  width: 33.33%;
+  height: 100%;
+}
+
+.App .overlay__third {
+  position: absolute;
+  z-index: 9;
+  background-color: #ffc107;
+  top: 0;
+  left: 66.66%;
+  width: 33.33%;
+  height: 100%;
+}
+/*# sourceMappingURL=index.css.map */

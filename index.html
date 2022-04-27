@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doritos</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="App">
+      <header class="header">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__logo logo">
+              <a href="index.html" class="logo__link"
+                ><img src="./assets/doritos_logo.png" alt="logo"
+              /></a>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__menu menu">
+                <li class="menu__items">
+                  <a class="menu__links" href="#products">Products</a>
+                </li>
+                <li class="menu__items">
+                  <a class="menu__links" href="#about">About</a>
+                </li>
+                <li class="menu__items">
+                  <a class="menu__links" href="#company">Our Company</a>
+                </li>
+                <li class="menu__items">
+                  <a class="menu__links" href="#rewards">Tasty Rewards</a>
+                </li>
+                <li class="menu__items">
+                  <a class="menu__links" href="#buy">Where to buy</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__cart cart">
+              <button class="cart__btn">
+                <img
+                  class="cart__img"
+                  src="./assets/svg/cart.svg"
+                  alt=""
+                /><span class="cart__items">2</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="overlay">
+        <div class="overlay__first"></div>
+        <div class="overlay__second"></div>
+        <div class="overlay__third"></div>
+      </div>
+      <section class="hero">
+        <img class="hero__rings" src="./assets/rings.png" alt="rings" />
+        <div class="container">
+          <div class="hero__row">
+            <div class="hero__content">
+              <h1 class="hero__title">
+                <span class="hide">Light a fire under your taste buds</span>
+              </h1>
+              <h3 class="hero__subtitle">
+                <span class="hide">Nacho cheese</span>
+              </h3>
+              <p class="hero__description">
+                <span class="hide"
+                  >Corn, Vegetable Oil (Corn, Canola, And/or Sunflower Oil),
+                  Maltodextrin (Made From Corn), Salt, Cheddar Cheese (Milk,
+                  Cheese Cultures, Salt, Enzymes), Whey, Monosodium Glutamate,
+                  Buttermilk, Romano Cheese (Part-skim Cow's Milk, Cheese
+                  Cultures, Salt, Enzymes), Whey Protein Concentrate, Onion
+                  Powder, Corn Flour, Natural And Artificial Flavor, Dextrose,
+                  Tomato Powder, Lactose, Spices, Artificial Color (Yellow 6,
+                  Yellow 5, And Red 40), Lactic Acid, Citric Acid, Sugar, Garlic
+                  Powder, Skim Milk, Red And Green Bell Pepper Powder, Disodium
+                  Inosinate, And Disodium Guanylate.<strong
+                    >CONTAINS MILK INGREDIENTS.</strong
+                  ></span
+                >
+              </p>
+              <h2 class="hero__price">
+                <span class="hide">$3.99</span>
+              </h2>
+              <a class="hero__btn" href="#cart"
+                ><span class="hide"> Add to cart</span></a
+              >
+            </div>
+            <div class="hero__chipses chipses hero__content">
+              <figure>
+                <img
+                  class="chipses__doritos"
+                  src="./assets/doritos.png"
+                  alt="doritos"
+                />
+                <div class="chipses__backdrop"></div>
+                <div class="chipses__details">
+                  <img
+                    class="chipses__chips"
+                    src="./assets/chips.png"
+                    alt="chips"
+                  /><img
+                    class="chipses__ketchup"
+                    src="./assets/ketchup.png"
+                    alt="ketchup"
+                  /><img
+                    class="chipses__suyaPepper"
+                    src="./assets/suyaPepper.png"
+                    alt="suya__pepper"
+                  />
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="./animations/index.js"></script>
+  </body>
+</html>

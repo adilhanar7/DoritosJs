@@ -1,0 +1,337 @@
+@import './base';
+@import './functions/responsive';
+@import './helpers/mixins';
+@import './helpers/variables';
+@import './vendors/normalize';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes heroBackgroundLinear {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes chipsBackdropLinear {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(6%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes floatSuyaPepper {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes floatKetchup {
+  0% {
+    transform: translateY(0%) translateX(0%);
+  }
+  50% {
+    transform: translateY(5%) translateX(5%);
+  }
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+@keyframes floatChips {
+  0% {
+    transform: translateY(0%) translateX(0%);
+  }
+  50% {
+    transform: translateY(5%) translateX(5%);
+  }
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+.App {
+  .header {
+    position: absolute;
+    z-index: 1;
+    padding: vw(10) 0;
+    width: 100%;
+    &__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__logo {
+      margin-left: vw(-30);
+      a {
+        img {
+          max-height: vw(128);
+        }
+      }
+    }
+    &__menu {
+      display: flex;
+      align-items: center;
+      .menu__items {
+        position: relative;
+        margin-left: vw(20);
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: vw(-4);
+          left: 0;
+          width: 0%;
+          height: vw(4);
+          background-color: $yellow;
+          border-radius: vw(10);
+          transition: 0.5s;
+        }
+        .menu__links {
+          font: vw(18) 'Lodrina Solid', cursive;
+          font-weight: 900;
+          letter-spacing: vw(1);
+          color: $white;
+          text-transform: capitalize;
+        }
+      }
+    }
+    &__cart {
+      .cart__btn {
+        position: relative;
+        background-color: $white;
+        border-radius: vw(10);
+        padding: vw(6) vw(10);
+        &:hover {
+          background: $yellow;
+          span {
+            background: $white;
+            color: $black;
+          }
+        }
+        span {
+          position: absolute;
+          top: vw(-20);
+          left: vw(60);
+          background: $black;
+          padding: vw(5) vw(13);
+          border-radius: 50%;
+          color: $white;
+          font: vw(20) 'Londrina Solid', cursive;
+          font-weight: 500;
+          letter-spacing: vw(1);
+          transition: all 250ms ease-in-out;
+        }
+        img {
+          max-height: vw(50);
+        }
+      }
+    }
+  }
+  .hero {
+    position: relative;
+    background: linear-gradient(45deg, #fd0606, #6a040f);
+    min-height: 100vh;
+    background-size: 200% 200%;
+    animation: heroBackgroundLinear 2s ease-in-out infinite;
+    overflow: hidden;
+    &__rings {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.5;
+      z-index: -1;
+    }
+    &__row {
+      display: flex;
+    }
+    &__content {
+      padding-top: vw(150);
+      position: relative;
+      width: 50%;
+    }
+    &__title {
+      font: vw(80) 'Londrina Solid', cursive;
+      font-weight: 900;
+      letter-spacing: vw(3);
+      line-height: 1em;
+      color: $yellow;
+      overflow: hidden;
+      position: relative;
+    }
+    &__subtitle {
+      font: vw(32) 'Londrina Solid', cursive;
+      font-weight: 900;
+      letter-spacing: vw(1);
+      overflow: hidden;
+      color: $white;
+      position: relative;
+    }
+    &__description {
+      width: 80%;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: vw(16);
+      font-weight: 400;
+      color: $white;
+      position: relative;
+      max-height: vw(200);
+      overflow: hidden;
+      strong {
+        display: block;
+        margin-top: vw(10);
+        font-size: vw(22);
+        letter-spacing: vw(1);
+      }
+    }
+    &__price {
+      font: vw(48) 'Londrina Solid', cursive;
+      font-weight: 900;
+      margin: vw(35) 0;
+      color: $white;
+      position: relative;
+      overflow: hidden;
+    }
+    &__btn {
+      overflow: hidden;
+      position: relative;
+      &:hover {
+        span {
+          background-color: $black;
+          color: $yellow;
+        }
+      }
+      span {
+        padding: vw(16) vw(48);
+        border-radius: vw(15);
+        background-color: $yellow;
+        transition: 0.5s;
+        font: vw(20) 'Londrina Solid', cursive;
+        font-weight: 500;
+        letter-spacing: vw(1);
+        color: $black;
+        transition: 0.5s;
+      }
+    }
+    &__chipses {
+      position: relative;
+      figure {
+        .chipses__doritos {
+          position: absolute;
+          z-index: 2;
+          animation: float 2s ease-in-out infinite;
+        }
+        .chipses__backdrop {
+          position: absolute;
+          top: vw(200);
+          right: vw(60);
+          width: vw(640);
+          height: vw(775);
+          background: linear-gradient(45deg, $yellow, rgb(255, 255, 160));
+          background-size: 200% 200%;
+          border-radius: vw(30);
+          transform: skew(-5deg, -5deg);
+          animation: chipsBackdropLinear 2s ease-in-out infinite;
+        }
+        .chipses__details {
+          position: relative;
+          img {
+            position: absolute;
+          }
+          .chipses__chips {
+            right: vw(-50);
+            top: vw(-80);
+            height: vw(340);
+            transform: rotate(10deg);
+            z-index: 3;
+            animation: floatChips 2s ease-in-out infinite;
+          }
+          .chipses__ketchup {
+            left: vw(-40);
+            top: vw(550);
+            height: vw(160);
+            z-index: 1;
+            animation: floatKetchup 2s ease-in-out infinite;
+          }
+          .chipses__suyaPepper {
+            right: vw(-60);
+            top: vw(500);
+            height: vw(320);
+            z-index: 0;
+            animation: floatSuyaPepper 2s ease-in-out infinite;
+          }
+        }
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    &__first {
+      position: absolute;
+      z-index: 9;
+      background-color: $yellow;
+      left: 0;
+      width: 33.33%;
+      height: 100%;
+    }
+    &__second {
+      position: absolute;
+      z-index: 9;
+      background-color: $yellow;
+      left: 33.33%;
+      width: 33.33%;
+      height: 100%;
+    }
+    &__third {
+      position: absolute;
+      z-index: 9;
+      background-color: $yellow;
+      top: 0;
+      left: 66.66%;
+      width: 33.33%;
+      height: 100%;
+    }
+  }
+}
